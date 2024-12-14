@@ -1,0 +1,231 @@
+body{
+    background-color: rgb(69, 167, 69);
+    /* background-color: green; */
+}
+.spicy-rice-regular {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.banner,.links, .company, .nav-link, .search{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding: 5px;
+}
+.banner{
+    width: 95%;
+}
+/*to hold the company name next to nav link tabs*/
+.company{
+    flex: 0.3;
+    font-family:"Spicy Rice";
+    font-size: 27px;
+    color:black;
+    /* color:rgb(128, 211, 125); */
+    letter-spacing: 2.5px;
+    text-shadow: 12px 6px 4px  #137e2e;
+    padding: 15px 5px;
+    margin: 0px 20px;
+    width: 19%;
+}
+/* for the container to hold nav link tabs*/
+.links{
+    flex: 1;
+    width: 100%;
+    padding: 2px;
+    height: 120px;
+}
+/* for the nav links themselves*/
+.nav-link{
+    background-color: whitesmoke;
+    flex: 1;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin: 0px 7px;
+    height: 90px; 
+    max-width: 150px;
+    border-radius: 50% 50%  12px 12px;
+    font-family:"Spicy Rice";
+    font-size: 15px;
+    padding: 5px;
+    cursor:pointer;
+}
+.nav-link:hover{
+    height: 110px;
+    transition: 0.3s ease all;
+    background-color: green;
+    color:whitesmoke;
+}
+.icon img{
+    width: 50px;
+    height: 50px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+/* logo that goes next to coffee and connections*/
+.logo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+}
+
+
+/* holds both sidebars, the main content sections*/
+.content{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:center;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    height: 240vh;
+    width: 95%;
+}
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 97%;
+}
+/* holds the links and the news*/
+.main-sidebar, .sidebar-2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    width: 15%;
+    margin: 0px 15px 5px 15px;
+    border-radius: 8px;
+    height: 50vh;
+}
+
+/* text inside the sidebars*/
+.topic, .topic-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    margin: 5px;
+    width: 70%;
+    border-radius: 8px;
+}
+.topic{
+    background-color: rgb(69, 167, 69);
+}
+.topic-links{
+    padding: 5px;
+    font-size: 15px;
+    margin: 0;
+}
+.topic-links a{
+    margin-top: 5px;
+    color: rgb(7, 80, 7);
+}
+/* the two colomns that hold the information for website*/
+.main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    margin: 5px 10px;
+    height: 235vh;
+}
+.sidebar-2{
+    height: 125vh;
+}
+.main-sidebar{
+    height: 160vh;
+}
+
+/*for each topic in the main*/
+.block{
+    background-color: transparent;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 5px;
+    padding: 4px;
+    height: 450px;
+    height:auto;
+}
+#sidebar-ad{
+    height: 220px;
+    width: 90%;
+}
+#sidebar-ad img{
+    height: 210px;
+    width: 100%;
+}
+#ad {
+    height: 200px;
+}
+#ad img, #ad-pup img{
+    height: 190px;
+    width: 100%;
+    max-width: 400px;
+}
+#ad-pup{
+    height: 320px;
+}
+.block img{
+    width: 330px;
+    height: 200px;
+}
+.description{
+    padding: 8px;
+    margin: 3px;
+    font-size: 14px;
+}
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .company{
+        display:none;
+    }
+    .links{
+        width: 100%;
+        margin-left: 15px;
+        border-radius: 12px;
+        background-color: whitesmoke;
+        padding: 5px;
+    }
+    .nav-link{
+        border-radius: 0;
+        margin: 0;
+        height: auto;
+        background-color: transparent;
+    }
+    .block img{
+        width: 100%;
+    }
+    .block{
+        height:auto;
+    }
+    .main{
+        height:auto;
+    }
+}
