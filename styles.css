@@ -1,12 +1,14 @@
 body{
-    background-color: rgb(69, 167, 69);
-    /* background-color: green; */
+    /* background-color: rgb(69, 167, 69); */
+    background-image:url("https://i.pinimg.com/736x/89/c6/c1/89c6c104a986c73e8166fd9a048ceb13.jpg");
+    
 }
 .spicy-rice-regular {
     font-family: "Spicy Rice", serif;
     font-weight: 400;
     font-style: normal;
   }
+  
   
 .banner,.links, .company, .nav-link, .search{
     display:flex;
@@ -22,8 +24,8 @@ body{
 .company{
     flex: 0.3;
     font-family:"Spicy Rice";
-    font-size: 27px;
-    color:black;
+    font-size:22px;
+    color:rgb(253, 253, 253);
     /* color:rgb(128, 211, 125); */
     letter-spacing: 2.5px;
     text-shadow: 12px 6px 4px  #137e2e;
@@ -40,7 +42,7 @@ body{
 }
 /* for the nav links themselves*/
 .nav-link{
-    background-color: whitesmoke;
+    background-color: rgb(69, 167, 69);
     flex: 1;
     display:flex;
     align-items: center;
@@ -105,8 +107,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: transparent;
-    width: 15%;
+    padding: 4px;
     margin: 0px 15px 5px 15px;
     border-radius: 8px;
     height: 50vh;
@@ -120,7 +121,7 @@ main{
     flex-direction: column;
     padding: 8px;
     margin: 5px;
-    width: 70%;
+    width: 96%;
     border-radius: 8px;
 }
 .topic{
@@ -143,7 +144,12 @@ main{
     flex-direction: column;
     width: 30%;
     margin: 5px 10px;
-    height: 235vh;
+    height: auto;
+    max-height: 235vh;
+    padding: 10px;
+}
+.mobile-main{
+    display:none;
 }
 .sidebar-2{
     height: 125vh;
@@ -162,8 +168,9 @@ main{
     width: 90%;
     margin: 5px;
     padding: 4px;
-    height: 450px;
+    max-height: 450px;
     height:auto;
+    
 }
 #sidebar-ad{
     height: 220px;
@@ -184,8 +191,14 @@ main{
 #ad-pup{
     height: 320px;
 }
+.block-img{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width: 95%;
+}
 .block img{
-    width: 330px;
+    width: 100%;
     height: 200px;
 }
 .description{
@@ -193,6 +206,39 @@ main{
     margin: 3px;
     font-size: 14px;
 }
+
+.coffee, .specialty, .fraps, .beans, .merch , .seasons{
+    display:none;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap:wrap;
+    margin: 10px 5px;
+    padding: 8px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 9px;
+    margin: 10px;
+    width: 40%;
+    border: 2px solid purple;
+}
+
+.item-d{
+    font-size: 14px;
+    width: 100%;
+}
+
+
+.item-img img{
+    width: 120px;
+    height: 120px;
+}
+
+
+
 footer{
     display:flex;
     align-items: center;
@@ -202,9 +248,14 @@ footer{
 }
 
 
-@media only screen and (max-width: 900px) {
-    .company{
+@media only screen and (max-width: 950px) {
+    .company, .logo{
         display:none;
+    }
+    .content{
+        height:auto;
+        padding: 6px;
+        margin: 5px;
     }
     .links{
         width: 100%;
@@ -220,12 +271,41 @@ footer{
         background-color: transparent;
     }
     .block img{
-        width: 100%;
+        width: 300px;
     }
     .block{
         height:auto;
     }
     .main{
-        height:auto;
+        display:none;
+    }
+    .mobile-main{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        padding: 7px;
+    }
+    .main-sidebar, .sidebar-2{
+        display:none;
+    }
+    .content{
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+    .coffee, .specialty, .fraps, .beans, .merch , .seasons{
+        flex-direction: column;
+    }
+    .item{
+        width: 90%;
+        padding: 5px;
+        margin: 4px;
+    }
+    .sidebar-2{
+        display:none;
+    }
+    .block-img{
+        width: 100%;
     }
 }

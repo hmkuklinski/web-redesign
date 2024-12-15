@@ -8,38 +8,45 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spicy+Rice&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spicy+Rice&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
         <div class="banner">
-            <div class="logo">
+            <div class="logo" onclick="showDefault()">
                 <img src="https://64.media.tumblr.com/efcf7868cec0e6ee228b9b4aa0ec2bcf/9c21b11693c72020-29/s500x750/b911b5e209a44898d3727f049a49b6b632c96a94.gif" alt="logo">
             </div>
-            <div class="company">
+            <div class="company" onclick="showDefault()">
                 <div><h1>Starbucks</h1></div>
             </div>
             
             <div class="links">
-                <div class="nav-link">
+                <div class="nav-link" onclick="showDefault()">
+                    <div class="icon" >
+                        <img src="https://cdn-icons-png.freepik.com/512/8395/8395475.png" alt="home">
+                    </div>
+                    <div class="nav-des">Home</div>
+                </div>
+                <div class="nav-link" onclick="showCoffee()">
                     <div class="icon">
                         <img src="https://cdn-icons-png.flaticon.com/512/8230/8230211.png" alt="img">
                     </div>
                     <div class="nav-des">Coffee</div>
                 </div>
-                <div class="nav-link">
+                <div class="nav-link" onclick="showSpecialty()">
                     <div class="icon">
                         <img src="https://cdn-icons-png.flaticon.com/512/412/412864.png" alt="img">
                     </div>
                     <div class="nav-des">Specialty</div>
                 </div>
-                <div class="nav-link">
+                <div class="nav-link"onclick="showFraps()">
                     <div class="icon">
                         <img src="https://cdn-icons-png.flaticon.com/512/820/820603.png" alt="img">
                     </div>
                     <div class="nav-des">Frappucinos</div>
                 </div>
-                <div class="nav-link">
+                <div class="nav-link"onclick="showSeasonal()">
                     <div class="icon">
                         <img src="https://cdn-icons-png.flaticon.com/512/2831/2831957.png" alt="img">
                     </div>
@@ -51,12 +58,12 @@
                     </div>
                     <div class="nav-des">Beans</div>
                 </div>
-                <div class="nav-link">
-                    <div class="icon">
+                <!-- <div class="nav-link">
+                    <div class="icon" onclick="showMerch()">
                         <img src="https://cdn-icons-png.flaticon.com/512/2611/2611083.png" alt="img">
                     </div>
                     <div class="nav-des">Merchandise</div>
-                </div>
+                </div> -->
             </div>
         </div>
         
@@ -64,13 +71,13 @@
         <div class="main-sidebar">
             <div class="topic">
                 <div class="topic-banner">
-                    <h3>Coffee</h3>
+                    <h3>About</h3>
                 </div>
                 <div class="topic-links">
-                    <a href="">Original Roast</a>
-                    <a href="">Blonde Roast</a>
-                    <a href="">Dark Roast</a>
-                    <a href="">Decaf</a>
+                    <a href="/">Our Origins</a>
+                    <a href="/">Our Beans</a>
+                    <a href="/">Our Creations</a>
+                    <a href="/">Our Connections</a>
                 </div>
             </div>
             <div class="topic">
@@ -95,15 +102,416 @@
                     <h3>Milks Available</h3>
                 </div>
                 <div class="topic-links">
-                    <a href="">2%</a>
-                    <a href="">Nonfat</a>
-                    <a href="">Whole Milk</a>
-                    <a href="">Coconut Milk</a>
-                    <a href="">Soy Milk</a>
-                    <a href="">Almond Milk</a>
-                    <a href="">Oat Milk</a>
-                    <a href="">Breve</a>
+                    <a href="#">2%</a>
+                    <a href="#">Nonfat</a>
+                    <a href="#">Whole Milk</a>
+                    <a href="#">Coconut Milk</a>
+                    <a href="#">Soy Milk</a>
+                    <a href="#">Almond Milk</a>
+                    <a href="#">Oat Milk</a>
+                    <a href="#">Breve</a>
                 </div>
+            </div>
+        </div>
+        <div class="coffee">
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://asset.menu.starbucks.co.jp/public/sku_images/4524785000018/4524785000018_11_s.jpg" alt="pp">
+                </div>
+                <div class="item-name">
+                    <h3>Pike Place- Medium Roast</h3>
+                </div>
+                <div class="item-d"><p>From our first store in Seattle’s Pike Place Market to our coffeehouses around the world, customers requested a freshly brewed coffee they could enjoy throughout the day. In 2008 our master blenders and roasters created this for you—a smooth, well-rounded blend of Latin American coffees with subtly rich flavors of chocolate and toasted nuts, it’s served fresh every day at a Starbucks® store near you.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://asset.menu.starbucks.co.jp/public/sku_images/4524785000018/4524785000018_11_s.jpg" alt="d">
+                </div>
+                <div class="item-name">
+                    <h3>Verona- Dark Roast</h3>
+                </div>
+                <div class="item-d"><p>Well-balanced and rich with a dark cocoa texture. Try it with a piece of dark chocolate to bring out even more sweetness.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://asset.menu.starbucks.co.jp/public/sku_images/4524785000018/4524785000018_11_s.jpg" alt="b">
+                </div>
+                <div class="item-name">
+                    <h3>Veranda- Blonde Roast</h3>
+                </div>
+                <div class="item-d"><p>In Latin America, coffee farms are often run by families, with their own homes on the same? land where their coffee grows. We’ve sipped coffee with these farmers for decades,? sitting on their verandas, overlooking the lush beauty of the coffee trees rolling out in the? distance. Most times it was a lightly roasted coffee like this one. It took us more than 80? tries to get it right—mellow and flavorful with a nice softness.?</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://asset.menu.starbucks.co.jp/public/sku_images/4524785000018/4524785000018_11_s.jpg" alt="de">
+                </div>
+                <div class="item-name">
+                    <h3>Decaf Pike Place Roast</h3>
+                </div>
+                <div class="item-d"><p>From our first store in Seattle’s Pike Place Market to our coffeehouses around the world, customers requested a freshly brewed coffee they could enjoy throughout the day. In 2008 our master blenders and roasters created this for you—a smooth, well-rounded blend of Latin American coffees with subtly rich flavors of chocolate and toasted nuts, it’s served fresh every day at a Starbucks® store near you. (Decaf as you like it.)</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.pe/Multimedia/productos/detalle/COFFEE_TRAVELER_V2.png" alt="t">
+                </div>
+                <div class="item-name">
+                    <h3>Coffee Traveler- Veranda</h3>
+                </div>
+                <div class="item-d"><p>A convenient carrier filled with 96 fl oz of our brewed Starbucks® Blonde Veranda Blend® (equivalent to 12 8-fl-oz cups), perfect for meetings, picnic gatherings or any occasion that calls for coffee.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.pe/Multimedia/productos/detalle/COFFEE_TRAVELER_V2.png" alt="t">
+                </div>
+                <div class="item-name">
+                    <h3>Coffee Traveler- Pike Place</h3>
+                </div>
+                <div class="item-d"><p>A convenient carrier filled with 96 fl oz of our featured brewed medium roast coffee (equivalent of twelve 8 fl oz cups)—a perfect pick-me-up for meetings, picnics or whatever occasion calls for coffee.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.pe/Multimedia/productos/detalle/COFFEE_TRAVELER_V2.png" alt="t">
+                </div>
+                <div class="item-name">
+                    <h3>Coffee Traveler- Dark Roast</h3>
+                </div>
+                <div class="item-d"><p>A convenient carrier filled with 96 fl oz of brewed Starbucks® Dark Roast coffee.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.pe/Multimedia/productos/detalle/COFFEE_TRAVELER_V2.png" alt="t">
+                </div>
+                <div class="item-name">
+                    <h3>Coffee Traveler- Decaf</h3>
+                </div>
+                <div class="item-d"><p>A convenient carrier filled with 96 fl oz of our featured brewed decaf coffee (equivalent of twelve 8 fl oz cups)—a perfect companion for meetings, picnics or whatever occasion calls for coffee.</p></div>
+            </div>
+        </div>
+        <div class="specialty">
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Americano---Feb-2023.jpeg" alt="americano">
+                </div>
+                <div class="item-name">
+                   <h3>Caffè Americano</h3>
+                </div>
+                <div class="item-d"><p>Espresso shots topped with hot water create a light layer of crema culminating in this wonderfully rich cup with depth and nuance.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FIced-Americano---Feb-2023.jpeg&w=384&q=75" alt="aa">
+                </div>
+                <div class="item-name">
+                    <h3>Iced Caffè Americano</h3>
+                </div>
+                <div class="item-d"><p>Espresso shots are topped with water to produce a light layer of crema, then served over ice. The result is this wonderfully rich cup with depth and nuance.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FCappuccino---Feb-2023.jpeg&w=384&q=75" alt="cap">
+                </div>
+                <div class="item-name">
+                    <h3>Cappucino</h3>
+                </div>
+                <div class="item-d"><p>Dark, rich espresso combined with steamed milk, topped with a deep layer of foam</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_Espresso_Single.jpg?impolicy=1by1_wide_topcrop_630" alt="e">
+                </div>
+                <div class="item-name">
+                    <h3>Espresso</h3>
+                </div>
+                <div class="item-d"><p>Our smooth signature Espresso Roast with rich flavor and caramelly sweetness is at the very heart of everything we do.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FEspresso-Con-Pana---Feb-2023.jpeg&w=384&q=75" alt="ecp">
+                </div>
+                <div class="item-name">
+                    <h3>Espresso Con Panna</h3>
+                </div>
+                <div class="item-d"><p>Two shots of carmelly-sweet espresso with a dollop of whipped cream.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FEspresso-Macchiato---Feb-2023.jpeg&w=384&q=75" alt="em">
+                </div>
+                <div class="item-name">
+                    <h3>Espresso Macchiato</h3>
+                </div>
+                <div class="item-d"><p>Two caramelly-sweet shots of espresso marked with a small amount of foam</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FFlat-White---Feb-2023.jpeg&w=256&q=75" alt="fw">
+                </div>
+                <div class="item-name">
+                    <h3>Flat White</h3>
+                </div>
+                <div class="item-d"><p>Expertly steamed milk poured over two shots of espresso and finished with delicate Rosetta art.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://th.bing.com/th/id/OIP.a1P9XzQqpFOQsz38-1djYwAAAA?rs=1&pid=ImgDetMain" alt="h">
+                </div>
+                <div class="item-name">
+                    <h3>Honey Almondmilk Flat White</h3>
+                </div>
+                <div class="item-d"><p>This flat white intentionally pairs almondmilk and Starbucks® Blonde Espresso Roast with a hint of honey, making a perfect amount of creamy, nutty sweetness.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FLatte-Mug---Feb-2023.jpeg&w=256&q=75" alt="">
+                </div>
+                <div class="item-name">
+                    <h3>Caffè Latte</h3>
+                </div>
+                <div class="item-d"><p>Our dark, rich espresso is balanced with steamed milk and topped with a light layer of foam. A perfect milk-forward warm up.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FIced-Cafe-Latte---Feb-2023.jpeg&w=256&q=75" alt="il">
+                </div>
+                <div class="item-name">
+                    <h3>Iced Caffè Latte</h3>
+                </div>
+                <div class="item-d"><p>Our dark, rich espresso is combined with milk and served over ice. A perfect milk-forward cool down.</p></div>
+            </div>
+            <!-- <div class="item">
+                <div class="item-img">
+                    <img src="" alt="">
+                </div>
+                <div class="item-name">
+                    <h3>Cinnamon Dolce Latte</h3>
+                </div>
+                <div class="item-d"><p></p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="" alt="">
+                </div>
+                <div class="item-name">
+                    <h3>Iced Cinnamon Dolce Latte</h3>
+                </div>
+                <div class="item-d"><p></p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="" alt="">
+                </div>
+                <div class="item-name">
+                    <h3>Blonde Vanilla Latte</h3>
+                </div>
+                <div class="item-d"><p></p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="" alt="">
+                </div>
+                <div class="item-name">
+                    <h3>Iced Blonde Vanilla Latte</h3>
+                </div>
+                <div class="item-d"><p></p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FCaramel-Macchiato---Feb-2023.jpeg&w=384&q=75" alt="cm">
+                </div>
+                <div class="item-name">
+                    <h3>Caramel Macchiato</h3>
+                </div>
+                <div class="item-d"><p>Freshly steamed milk with vanilla-flavoured syrup, marked with espresso and finished with caramel sauce.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FIced-Caramel-Macchiato---Feb-2023.jpeg&w=384&q=75" alt="icm">
+                </div>
+                <div class="item-name">
+                    <h3>Iced Caramel Macchiato</h3>
+                </div>
+                <div class="item-d"><p>Espresso combined with vanilla-flavoured syrup, milk and caramel sauce over ice.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FMocha--Feb-2023.jpeg&w=384&q=75" alt="m">
+                </div>
+                <div class="item-name">
+                    <h3>Caffè Mocha</h3>
+                </div>
+                <div class="item-d"><p>Espresso with bittersweet mocha sauce and steamed milk. Topped with whipped cream.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FIced-Mocha---Feb-2023.jpeg&w=384&q=75" alt="im">
+                </div>
+                <div class="item-name">
+                    <h3>Iced Caffè Mocha</h3>
+                </div>
+                <div class="item-d"><p>We combine our rich, full-bodied espresso with bittersweet mocha sauce, milk and ice, then top it off with whipped cream.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FWhite-Mocha---Feb-2023.jpeg&w=384&q=75" alt="wm">
+                </div>
+                <div class="item-name">
+                    <h3>Caffè White Mocha</h3>
+                </div>
+                <div class="item-d"><p>Espresso with white chocolate flavoured sauce and steamed milk, topped with whipped cream.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FIced-White-Mocha---Feb-2023.jpeg&w=384&q=75" alt="">
+                </div>
+                <div class="item-name">
+                    <h3>Iced Caffè White Mocha</h3>
+                </div>
+                <div class="item-d"><p>We combine our rich, full-bodied espresso with creamy sweet white mocha sauce, milk and ice, then top it off with whipped cream.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.ch/_next/image?url=https%3A%2F%2Fwww.digitalassets.starbucks.eu%2Fsites%2Fstarbucks-medialibrary%2Ffiles%2FCold-Brew---Feb-2023.jpeg&w=384&q=75" alt="cb">
+                </div>
+                <div class="item-name">
+                    <h3>Cold Brew</h3>
+                </div>
+                <div class="item-d"><p>Our Cold Brew Coffee is handcrafted in small batches, slow-steeped in cool water for 20 hours, without touching heat, to give a super-smooth flavour.</p></div>
+            </div>
+            -->
+        </div>
+        <div class="fraps">
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://th.bing.com/th/id/OIP.Sf_DaG36Dd8mRmOE1LkgaQHaHa?rs=1&pid=ImgDetMain" alt="c">
+                </div>
+                <div class="item-name">
+                    <h3>Caramel</h3>
+                </div>
+                <div class="item-d"><p>Caramel syrup meets coffee, milk and ice for a rendezvous in the blender, while whipped cream and buttery caramel sauce layer the love on top.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://th.bing.com/th/id/R.807cd21984f8b50f0d480b2e7fd0028e?rik=G4w3mupim55V0g&pid=ImgRaw&r=0" alt="mcc">
+                </div>
+                <div class="item-name">
+                    <h3>Mocha Cookie Crumble</h3>
+                </div>
+                <div class="item-d"><p>Frappuccino® Roast coffee, mocha sauce and Frappuccino® chips blended with milk and ice, layered on top of whipped cream and chocolate cookie crumble and topped with vanilla whipped cream, mocha drizzle and even more chocolate cookie crumble. </p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://th.bing.com/th/id/R.b6cc2d743c4aa175c3d0721db430a679?rik=7bqepHpw%2bMh%2bhw&pid=ImgRaw&r=0" alt="crc">
+                </div>
+                <div class="item-name">
+                    <h3>Caramel Ribbon Crunch</h3>
+                </div>
+                <div class="item-d"><p>Buttery caramel syrup blended with coffee, milk and ice, then topped with a layer of dark caramel sauce, whipped cream, caramel drizzle and a crunchy caramel-sugar topping—oh-so-beautifully delicious.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://starbmag.com/wp-content/uploads/2023/02/Starbucks-Coffee-Frappuccino-300x300.png" alt="co">
+                </div>
+                <div class="item-name">
+                    <h3>Coffee</h3>
+                </div>
+                <div class="item-d"><p>Coffee meets milk and ice in a blender for a rumble-and-tumble togetherness to create one of our most-beloved original Frappuccino® blended beverages.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://fastfoodnutrition.org/item-photos/full/9161_s.jpg" alt="cv">
+                </div>
+                <div class="item-name">
+                    <h3>Caffe Vanilla</h3>
+                </div>
+                <div class="item-d"><p>We take Frappuccino® roast coffee and vanilla bean powder, combine them with milk and ice, topped with whipped cream. Tastes like happiness.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://fastfoodnutrition.org/item-photos/400x400/9139_s.jpg" alt="m">
+                </div>
+                <div class="item-name">
+                    <h3>Mocha</h3>
+                </div>
+                <div class="item-d"><p>Mocha sauce, Frappuccino® Roast coffee, milk and ice all come together for a mocha flavor that'll leave you wanting more.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://fastfoodnutrition.org/item-photos/400x400/9162_s.jpg" alt="jc">
+                </div>
+                <div class="item-name">
+                    <h3>Java Chip</h3>
+                </div>
+                <div class="item-d"><p>We blend mocha sauce and Frappuccino® chips with coffee, milk and ice, then top it off with whipped cream and a mocha drizzle to bring you endless java joy.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.starbucks.co.nz/content/menu/0724808001652995995.jpg" alt="wm">
+                </div>
+                <div class="item-name">
+                    <h3>White Mocha</h3>
+                </div>
+                <div class="item-d"><p>White chocolate Frappuccino® Roast coffee, milk and ice get together for what might be the best thing that happens to you all day. Oh, and there's whipped cream on top.</p></div>
+            </div>
+        </div>
+        <div class="seasons">
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://www.shopwillowbrook.com/wp-content/uploads/2020/11/PSL_Starbucks-Website.png" alt="psl">
+                </div>
+                <div class="item-name">
+                    <h3>Pumpkin Spice Latte</h3>
+                </div>
+                <div class="item-d"><p>Our signature espresso and steamed milk with the celebrated flavor combination of pumpkin, cinnamon, nutmeg and clove. Enjoy it topped with whipped cream and real pumpkin-pie spices.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://globalassets.starbucks.com/digitalassets/products/bev/ChestnutPralineLatte-onGreen.jpg?impolicy=1by1_wide_topcrop_630" alt="cp">
+                </div>
+                <div class="item-name">
+                    <h3>Chestnut Praline</h3>
+                </div>
+                <div class="item-d"><p>We begin with our signature Espresso Roast and velvety steamed milk, and then add flavors of caramelized chestnuts and spices—all topped with a holiday finale of whipped cream and specially spiced praline crumbs.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://globalassets.starbucks.com/digitalassets/products/bev/ChestnutPralineLatte-onGreen.jpg?impolicy=1by1_wide_topcrop_630" alt="cb">
+                </div>
+                <div class="item-name">
+                    <h3>Caramel Brulée Latte</h3>
+                </div>
+                <div class="item-d"><p>Our signature espresso, steamed milk and rich caramel brulée sauce finished with whipped cream and a supreme topping of even more caramel brulée bits.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://globalassets.starbucks.com/digitalassets/products/bev/PeppermintMocha-onGreen.jpg?impolicy=1by1_wide_topcrop_630" alt="pm">
+                </div>
+                <div class="item-name">
+                    <h3>Peppermint Mocha</h3>
+                </div>
+                <div class="item-d"><p>Our festive, all-star Peppermint Mocha brightens the holidays: signature Espresso Roast combines with steamed milk, sweet mocha sauce and peppermint-flavored syrup, topped with whipped cream and dark-chocolate curls.</p></div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190716_PeppermintWhiteChocolateMocha.jpg?impolicy=1by1_wide_topcrop_630" alt="pwm">
+                </div>
+                <div class="item-name">
+                    <h3>Peppermint White Mocha</h3>
+                </div>
+                <div class="item-d"><p>Rich espresso meets a trio of white-chocolate sauce, peppermint-flavored syrup and steamed milk, topped with sweet whipped cream and dark-chocolate curls—an oh-so-delightfully merry treat.</p></div>
+            </div>
+        </div>
+        <div class="beans">
+            <div class="item">
+                <div class="item-img"></div>
+                <div class="item-name"></div>
+                <div class="item-d"></div>
+            </div>
+        </div>
+        <div class="merch">
+            <div class="item">
+                <div class="item-img"></div>
+                <div class="item-name"></div>
+                <div class="item-d"></div>
             </div>
         </div>
         <div class="main" id="main-1">
@@ -181,10 +589,90 @@
                 <div class="description">
                     <h4>Original</h4>
                     <p>Notes of Rich Molasses & Caramel
-                        First created in 1975, this multi-region blend still serves as the foundation of our handcrafted espresso drinks in Starbucks stores around the world. The perfect melding of beans and roast reveals notes of rich molasses and a bold, caramelly sweetness—a flavour profile so incredible it’s never been changed. Delicious on its own or balanced with milk.
+                        First created in 1975, this multi-region blend still serves as the foundation of our handcrafted espresso drinks in Starbucks stores around the world. The perfect melding of beans and roast reveals notes of rich molasses and a bold, caramelly sweetness.
                     </p>
                     <h4>Blonde</h4>
-                    <p>Experience the lighter side of espresso—a soft, beautifully balanced flavor profile that pairs perfectly with milk (or your favorite nondairy alternative). Made up of select Latin American and East African beans, this blend is carefully roasted to coax out sweet, vibrant notes of candied apple and bittersweet chocolate. The result is smooth, well-rounded and versatile, delicious served hot or over ice.</p>
+                    <p>Experience the lighter side of espresso—a soft, beautifully balanced flavor made from select Latin American and East African beans, this blend is carefully roasted to coax out sweet, vibrant notes of candied apple and bittersweet chocolate. </p>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-main">
+            <div class="block">
+                <div class="subtitle">
+                    <h3>Seattle Origins</h3>
+                </div>
+                
+                <div class="block-img">
+                    <img src="https://images.squarespace-cdn.com/content/v1/605cf83c67351774d7a221ff/1618449143629-YLN8T1UCRD25UDETNENV/SBUX+jwp.jpg?format=1000w" alt="img">
+                </div>
+                <div class="description">
+                    <p>Starbucks first opened its doors on March 30, 1971 at Seattle’s historic Pike Place Market. 
+                        Our first store sold whole-bean coffee, tea and spices. 
+                        Ever since then, Starbucks decided to transform into a complete coffee adventure. 
+                        We started with traditional coffee classics, and slowly started to introduce specialty drinks and hand-crafted beverages that explore various flavor profiles.
+                        Today, Starbucks serves Frappuccino blended beverages in all of its 66 countries and offers more than 36,000 different drink combinations.
+                    </p>
+                </div>
+            </div>
+            <div class="block"id="ad">
+                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3FnajhwMDM0OTk2dXNhMXhsajg0MGsyNG84OHZyMXVyeGd6aWo1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/AEHozS9XQhnceWVbEp/giphy.webp" alt="img">
+            </div>
+            
+            <div class="block">
+                <div class="subtitle">
+                    <h3>From Farm to Cup</h3>
+                </div>
+                <div class="block-img">
+                    <img src="https://fairtradeanz.org/app/uploads/2023/06/ACODIHUE-Guatemala-scaled.jpg" alt="img">
+                </div>
+                <div class="description">
+                    <p>Starbucks proudly sources 100% arabica coffee from more than 450,000 farmers in 30 markets along “The Coffee Belt” – in Latin America, Asia Pacific and Africa. 
+                    <br>
+                    In 2004, in collaboration with Conservation International, we developed Coffee and Farmer Equity (C.A.F.E.) Practices, one of the coffee industry’s first ethical sourcing guidelines. C.A.F.E. Practices is a set of more than 200 checkpoints in categories like economic transparency, social responsibility, environmental leadership and quality – all audited through a third-party independent verification process.       
+                    </p>
+                </div>
+            </div>
+            <div class="block"id="ad-pup">
+                <div class="topic-banner">
+                    <h3>Don't Forget the Puppicino!</h3>
+                </div>
+                <img src="https://s.yimg.com/uu/api/res/1.2/ES0J8m5Lnyn2.ofT.k6EIA--~B/aD00MDA7dz0zODQ7YXBwaWQ9eXRhY2h5b24-/https://66.media.tumblr.com/a09872f4b816aab1e867bce9f7fcd793/tumblr_oaf8u4Bnqs1ry46hlo1_400.gif" alt="img">
+            </div>
+            <div class="block" id="ad">
+                <img src="https://stories.starbucks.com/uploads/sites/9/2023/07/CA_SBR_Wednesday_PR_Asset_6318x3872-1024x628.jpg" alt="img">
+            </div>
+            <div class="block">
+                <div class="subtitle">
+                    <h3>Introducing Frappucinos!</h3>
+                </div>
+                <div class="block-img">
+                    <img src="https://th.bing.com/th/id/R.28d37d81360e9c7ec355533a1b4236d1?rik=%2b8mCBcPqUsE6YA&pid=ImgRaw&r=0" alt="frap">
+                </div>
+                <div class="description">
+                    <p>In the summer of 1995, Starbucks brought Frappuccino across all of its stores in the United States and Canada. The only two flavors were Coffee and Mocha, made from ice double-strength brewed Italian Roast coffee brewed in stores. There was not even whipped cream.
+                        Starbucks continued to innovate with new flavors to meet growing demand. In 1999, Starbucks introduced Caramel Frappuccino® blended beverage with whipped cream and caramel drizzle – served with a green straw and domed lid for the first time.
+
+
+                    </p>
+                </div>
+            </div>
+            <div class="block" id="ad">
+                <img src="https://www.dontpayfull.com/at/starbucks.com/gallery/20-off-starbucks.com_coupon_code_1.jpg" alt="img">
+            </div>
+            <div class="block" id="espresso">
+                <div class="subtitle">
+                    <h3>The Perfect Espresso</h3>
+                </div>
+                <div class="block-img">
+                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2tpbm13eHYwNDdpN290cmlsMjQwbnczenpoMTV0bG45Y3llaXJqNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KI2fJqtsBhwkw/giphy.webp" alt="img">
+                </div>
+                <div class="description">
+                    <h4>Original</h4>
+                    <p>Notes of Rich Molasses & Caramel
+                        First created in 1975, this multi-region blend still serves as the foundation of our handcrafted espresso drinks in Starbucks stores around the world. The perfect melding of beans and roast reveals notes of rich molasses and a bold, caramelly sweetness.
+                    </p>
+                    <h4>Blonde</h4>
+                    <p>Experience the lighter side of espresso—a soft, beautifully balanced flavor made from select Latin American and East African beans, this blend is carefully roasted to coax out sweet, vibrant notes of candied apple and bittersweet chocolate. </p>
                 </div>
             </div>
         </div>
@@ -228,7 +716,23 @@
 </body>
 </html>
 
-<!-- These are images i can use:
+<!-- 
+
+template for menu: 
+<div class="item">
+    <div class="item-img">
+        <img src="" alt="">
+    </div>
+    <div class="item-name">
+        <h3></h3>
+    </div>
+    <div class="item-d"><p></p></div>
+</div>
+
+
+
+
+These are images i can use:
 
 -- fun gifs ---
 Unicorn frap Tumblr glitter gif: https://64.media.tumblr.com/dd456f262bd27a81a617534ce439e4d0/tumblr_ooroq3paE71vx777ao1_r1_500.gifv
@@ -262,4 +766,22 @@ summer drinks: https://www.sheknows.com/wp-content/uploads/2018/08/lccypqogcab6r
 frozen lemondades:https://vegnews.com/media/W1siZiIsIjM5MjcxL1ZlZ05ld3MuU3RhcmJ1Y2tzRnJvemVuTGVtb25hZGVzLlN0YXJidWNrcy5wbmciXSxbInAiLCJjcm9wX3Jlc2l6ZWQiLCIxNTk5eDk0NSswKzAiLCIxNjAweDk0Nl4iLHsiZm9ybWF0IjoianBnIn1dLFsicCIsIm9wdGltaXplIl1d/VegNews.StarbucksFrozenLemonades.Starbucks.png?sha=2a17003e7ac3aa8c
 
 
+--background images --
+pike: https://about.starbucks.com/uploads/2022/09/Starbucks-Virtual-Backgrounds-PikePlace.jpg
+blonde: https://about.starbucks.com/uploads/2022/08/PA100_NextGenCoreCoffee_BGs_TeamsBG_1920x1260_Veranda-1024x672.jpg
+guatemala: https://about.starbucks.com/uploads/2022/08/PA100_NextGenCoreCoffee_BGs_TeamsBG_1920x1260_GuatemalaAntigua-1024x672.jpg
+sumatra: https://about.starbucks.com/uploads/2022/08/PA100_NextGenCoreCoffee_BGs_TeamsBG_1920x1260_Sumatra-1024x672.jpg
+
+
+
+
+pink starbucks: https://th.bing.com/th/id/R.54c0687e20132593122aac104bb01447?rik=rfJAbtuCgfiEzQ&riu=http%3a%2f%2fwww.riskytumbler.com%2fwp-content%2fuploads%2f2023%2f05%2fPink-SB-Coffee.jpeg&ehk=zHvI404VPpEWAZuQfY7b97U4iVIXCfk3Yq1tG2G8uVw%3d&risl=&pid=ImgRaw&r=0
+flowers: https://i.pinimg.com/736x/d6/a8/2d/d6a82d3bbadb57676548e9bcc2db211a.jpg
+butterflies: https://i.pinimg.com/736x/c7/c7/3d/c7c73d7d682019b37350289be177962b.jpg
+cactus: https://th.bing.com/th/id/OIP.bICV9aux__CI7WOu429bRwAAAA?rs=1&pid=ImgDetMain
+calm: https://i.pinimg.com/736x/ff/4f/f1/ff4ff10f1577183c9ac8170af4d30616.jpg
+tie dye: https://i.pinimg.com/736x/a7/ef/ae/a7efaedebda4366678686de8f6b93d4b.jpg
+fraps: https://i.pinimg.com/736x/f5/c1/68/f5c168640081017dff95af133d7aec15.jpg
+pastel drawn fruits: https://i.pinimg.com/736x/eb/ac/76/ebac76a88816c698e6a73c4bd5766ee3.jpg
+starry night: https://i.pinimg.com/736x/89/c6/c1/89c6c104a986c73e8166fd9a048ceb13.jpg
 -->
